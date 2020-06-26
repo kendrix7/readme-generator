@@ -1,5 +1,27 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+const axios = require('axios');
+
+const api = {
+  getUser(username) {
+axios
+.get(`https://api.github.com/users/${username}`, 
+{
+  headers: {"Authorization": `${process.env.GH_TOKEN}`}
+})
+  .then(function(res) {
+    console.log(res.data)
+     
+    })
+     
+    .catch(error => console.log(error))
+ 
+}
+}
+
+api.getUser("kddayhoff");
+
+module.exports = api;
 
 // array of questions for user
 const questions = () => {
@@ -61,6 +83,28 @@ const questions = () => {
        message: "What is your GitHub username",  
      }
    ])
+
+   // get user github profile
+   .then(function(answers) {
+    let username = answers.username;
+getUser(username, answers);
+});
+  
+// call the github API
+    function getUser(username, answers) {
+  axios
+  .get(`https://api.github.com/users/${username}`, 
+  {
+    headers: {"Authorization": `token ${process.env.GH_TOKEN}`}
+  })
+    .then(function(res) {
+        const data = res.data
+        // console.log(data);
+        // console.log(data.email);
+      generateReadme(data, answers);
+      }) 
+      .catch(error => console.log(error))
+  }}
 
 
 // function to write README file
