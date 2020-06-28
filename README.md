@@ -8,9 +8,7 @@
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  
+  * [Links](#links)
   * [License](#license)
   
   ## Installation
@@ -31,18 +29,15 @@ The application itself can be invoked with `node index.js`.
   
   When you run `node index.js`, the application uses the `inquirer` package to prompt you in the command line with a series of questions about your GitHub and about your project.
 
-    The application then takes your responses and uses `axios` to fetch your GitHub profile from the [GitHub API](https://developer.github.com/v3/), including your GitHub profile picture and email.
-    From there, the application will generate markdown and a table of contents for the README conditionally based on your responses to the Inquirer prompts (so, if you don't answer the optional questions, such as Installation, an Installation section will not be included in your README).
+The application then takes your responses and uses `axios` to fetch your GitHub profile from the [GitHub API](https://developer.github.com/v3/), including your GitHub profile picture and email.
+From there, the application will generate markdown and a table of contents for the README conditionally based on your responses to the Inquirer prompts (so, if you don't answer the optional questions, such as Installation, an Installation section will not be included in your README).
 
-    Finally, `fs.writeFile` is used to generate your project's README.md file. You may view an eexample of such create file by looking at the "ExampleREADME.md in this file.
+Finally, `fs.writeFile` is used to generate your project's README.md file. You may view an eexample of such create file by looking at the "ExampleREADME.md in this file.
 
-  
-  ## Tests
-  
-  *Tests for application and how to run them:*
-  
-  okwefokwefok
-  
+## Links
+GitHub Repo - https://github.com/JohnNielsen1221/readme-generator
+Live Page - 
+
   ## License
   
   Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -60,3 +55,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   For any questions, please contact me with the information below:
  
   GitHub: [@JohnNielsen1221](https://api.github.com/users/JohnNielsen1221)
+
+  Email: johnhayesnielsen@gmail.com
