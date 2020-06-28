@@ -80,7 +80,7 @@ const questions = [
     {
         type: 'list',
         message: "Choose a license for your project.",
-        choices: ['Apache2.0', 'BSD--3--Clause', 'BSD--2--Clause', 'gpl--license', 'lgpl--license', 'MIT', 'MPL--2.0', 'CDDL--1.00','EPL--2.0'],
+        choices: ['Apache2.0', 'BSD--3--Clause', 'BSD--2--Clause', 'gpl--license', 'lgpl--license', 'MIT'],
         name: 'license'
     }
 ];

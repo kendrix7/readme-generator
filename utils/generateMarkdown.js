@@ -1,6 +1,10 @@
+const licenseHelper = require('../helpers/licenseHelper.js');
+
 function generateMarkdown(userResponses, userInfo) {
 
-  // Generate Table of Contents conditionally based on userResponses
+  const licenseVerbiage = licenseHelper.determineLicenseVerbiage(userResponses.license);
+
+  // let draftToC = generateToC(userResponses);
   let draftToC = `## Table of Contents`;
 
   if (userResponses.installation !== '') { draftToC += `
@@ -15,23 +19,23 @@ function generateMarkdown(userResponses, userInfo) {
   if (userResponses.tests !== '') { draftToC += `
   * [Tests](#tests)` };
 
-
   // Generate markdown for the top required portions of the README
   let draftMarkdown = 
   `# ${userResponses.title}
-  [![License](http://img.shields.io/badge/License-${userResponses.license}-brightgreen.svg)](http://opensource.org/licenses/${userResponses.license})  
+  [![License](http://img.shields.io/badge/License-${userResponses.license}-brightgreen.svg)](http://opensource.org/licenses/${userResponses.license})
   
   ## Description 
-  
-  *The what, why, and how:* 
-  
+    
   ${userResponses.description}
-  `
+  `;
 
   // Add Table of Contents to markdown
-  draftMarkdown += draftToC;
+  draftMarkdown += 
+  `
+  ${draftToC}
+  `;
  
-  // Add License section since License is required to Table of Contents
+  // Add License section to Table of Contents
   draftMarkdown += `
   * [License](#license)`;
   
@@ -89,15 +93,13 @@ function generateMarkdown(userResponses, userInfo) {
   
   ${userResponses.tests}`
   };
-
-
-  // License section is required
   draftMarkdown +=
   `
   
   ## License
   
-  ${userResponses.license}
+  ${licenseVerbiage}
+  
   `;
 
 

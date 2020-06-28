@@ -1,39 +1,44 @@
 # Project Title
-  [![License](http://img.shields.io/badge/License-gpl--license-brightgreen.svg)](http://opensource.org/licenses/gpl-license)  
+  [![License](http://img.shields.io/badge/License-gpl--license-brightgreen.svg)](http://opensource.org/licenses/gpl--license)
   
   ## Description 
-  
-  *The what, why, and how:* 
-  
+    
   Project Description
+  
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
   * [Contributing](#contributing)
   * [Tests](#tests)
+  
   * [License](#license)
   
   ## Installation
   
   *Steps required to install project and how to get the development environment running:*
   
-  inewfin
+  okwefokwefok
   
   ## Usage 
   
   *Instructions and examples for use:*
   
-  inwefin
+  okwefokwefok
   
   ## Tests
   
   *Tests for application and how to run them:*
   
-  inwfin
+  okwefokwefok
   
   ## License
   
-  gpl-license
+  License Copyright: Copyright © 2007 Free Software Foundation, Inc.
+License License: "Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed." (www.gnu.org/licenses/gpl-3.0.en.html).
+License Contact: Free Software Foundation (fsf.org).
+
+SPDX short identifier: GPL-3.0-only
+  
   
   ---
   
