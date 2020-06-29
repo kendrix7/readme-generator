@@ -1,8 +1,8 @@
-# h
+# j
   [![License](http://img.shields.io/badge/License-Apache2.0-brightgreen.svg)](http://opensource.org/licenses/Apache2.0)
   ## Description
 
-h
+j
   ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -16,25 +16,25 @@ h
 *Steps required to install project and how to get the development environment running:*
       
 
-h
+j
 
 ## Usage 
       
 *Instructions and examples for use:*
       
-h
+j
 
 ## Contributing
       
 *If you would like to contribute it, you can follow these guidelines for how to do so.*
       
-h
+j
 
 ## Tests
       
 *Tests for application and how to run them:*
       
-h
+j
   
 
 ## License
@@ -58,10 +58,10 @@ limitations under the License.
     
 ## Questions?
     
-![Developer Profile Picture](https://avatars0.githubusercontent.com/u/3854874?v=4) 
+![Developer Profile Picture](https://avatars2.githubusercontent.com/u/589410?v=4) 
     
 For any questions, please contact me with the information below:
     
-GitHub: [@h](https://api.github.com/users/h)
+GitHub: [@j](https://api.github.com/users/j)
     
-Email: [h]
+Email: [j]
